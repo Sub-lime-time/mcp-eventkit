@@ -2,10 +2,6 @@
 
 MCP server for Apple Reminders using the native [EventKit](https://developer.apple.com/documentation/eventkit) framework via PyObjC. No tokens, no sync services — reads and writes directly to the Reminders database on macOS.
 
-> **Personal project.** PRs are not reviewed or accepted.
-
----
-
 ## Requirements
 
 - macOS (Apple Silicon or Intel)
@@ -69,3 +65,11 @@ Replace `/path/to/server.py` with the absolute path to this file.
 - No support for subtasks, tags, location reminders, or recurring reminders
 - Due dates are stored as `NSDateComponents` — timezone behavior depends on the system calendar
 - macOS only (EventKit is not available on Linux/Windows)
+
+## Contributing
+
+Bug fixes and clear improvements are welcome — open a PR. For new features, please open an issue first to discuss before writing code. I'll merge fixes that are unambiguously correct, but make no guarantees on feature additions.
+
+## License
+
+MIT
